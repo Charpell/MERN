@@ -12,7 +12,7 @@ const router = express.Router();
 router.get('/', (req, res) =>
   res.status(200).json('Welcome to the CodizChat API'));
 router.route('/signup')
-  .get(signUp);
+  .post(signUp);
 router.route('/signin')
   .get(signIn);
 
